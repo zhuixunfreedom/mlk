@@ -1,0 +1,66 @@
+{
+  "_doc": "STAT350-03B 硬度（外皮）倍率表——【重建测试 profile，非原服数据】。仅在显式启用 -hardness-profile 时注入 preset_data 的 data.hardness；默认 profile 不下发该键（保留客户端粗糙回退）。",
+  "_evidence_level": "重建值/未证：原服 hardness 全表未取证；本表由客户端 WeaponExtension.BonusRate 回退分支（Soft/Hard 两档）外推而来，不得宣称与原服一致。",
+  "_client_consumption": "WeaponExtension.BonusRate：cache.Enum(\"hardness\",\"4\") 非空即改走服务端表；FindByKey(\"hardness\",\"id\",hardness).doc(\"bonus_rates\").f(weaponId, 1f)。注意「表存在」会关掉客户端已知回退，故默认不启用。",
+  "_id_order_evidence": "Hardness 枚举顺序（Hardness.cs:1-13）：1 Soft/2 Normal/3 Hard/4 SoftL2/5 SoftL3/6 SoftL4/7 SoftL5/8 HardL2/9 HardL3/10 HardL4/11 HardL5。",
+  "_weapon_order_evidence": "Weapon 枚举顺序（Weapon.cs:1-10）：1 Slash/2 Rush/3 Hit/4 Arrow/5 Magic/6 Gun/7 Heal。bonus_rates 键即这些整数。",
+  "_replacement_entry": "取得原服全表后，仅替换本文件 rows（保持 11 行 × 7 键形状），代码与下发路径不变。",
+  "profile": "rebuild-test",
+  "rows": [
+    {
+      "id": 1,
+      "name": "柔软",
+      "bonus_rates": { "1": 1.2, "2": 1.0, "3": 0.8, "4": 1.2, "5": 1.0, "6": 0.8, "7": 1.0 }
+    },
+    {
+      "id": 2,
+      "name": "常规",
+      "bonus_rates": { "1": 1.0, "2": 1.0, "3": 1.0, "4": 1.0, "5": 1.0, "6": 1.0, "7": 1.0 }
+    },
+    {
+      "id": 3,
+      "name": "坚硬",
+      "bonus_rates": { "1": 0.8, "2": 1.0, "3": 1.2, "4": 0.8, "5": 1.0, "6": 1.2, "7": 1.0 }
+    },
+    {
+      "id": 4,
+      "name": "柔软L2",
+      "bonus_rates": { "1": 1.3, "2": 1.05, "3": 0.7, "4": 1.3, "5": 1.0, "6": 0.7, "7": 1.0 }
+    },
+    {
+      "id": 5,
+      "name": "柔软L3",
+      "bonus_rates": { "1": 1.4, "2": 1.1, "3": 0.6, "4": 1.4, "5": 1.0, "6": 0.6, "7": 1.0 }
+    },
+    {
+      "id": 6,
+      "name": "柔软L4",
+      "bonus_rates": { "1": 1.5, "2": 1.15, "3": 0.5, "4": 1.5, "5": 1.0, "6": 0.5, "7": 1.0 }
+    },
+    {
+      "id": 7,
+      "name": "柔软L5",
+      "bonus_rates": { "1": 1.6, "2": 1.2, "3": 0.4, "4": 1.6, "5": 1.0, "6": 0.4, "7": 1.0 }
+    },
+    {
+      "id": 8,
+      "name": "坚硬L2",
+      "bonus_rates": { "1": 0.7, "2": 0.95, "3": 1.3, "4": 0.7, "5": 1.0, "6": 1.3, "7": 1.0 }
+    },
+    {
+      "id": 9,
+      "name": "坚硬L3",
+      "bonus_rates": { "1": 0.6, "2": 0.9, "3": 1.4, "4": 0.6, "5": 1.0, "6": 1.4, "7": 1.0 }
+    },
+    {
+      "id": 10,
+      "name": "坚硬L4",
+      "bonus_rates": { "1": 0.5, "2": 0.85, "3": 1.5, "4": 0.5, "5": 1.0, "6": 1.5, "7": 1.0 }
+    },
+    {
+      "id": 11,
+      "name": "坚硬L5",
+      "bonus_rates": { "1": 0.4, "2": 0.8, "3": 1.6, "4": 0.4, "5": 1.0, "6": 1.6, "7": 1.0 }
+    }
+  ]
+}

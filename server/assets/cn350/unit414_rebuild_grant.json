@@ -1,0 +1,19 @@
+{
+  "grant_version": "unit414-rebuild-v1",
+  "initial_level": 1,
+  "monster_ids": [],
+  "source": {
+    "manifest_sha256": "",
+    "unit_catalog_version": "202009041551",
+    "unit_catalog_sha256": "516d7debdcceddcfd39544c56ad31797e2928dff611f29d3ec3b71193c5c07e1",
+    "monster_catalog_version": "201906151559",
+    "monster_catalog_sha256": "7f1014466e2312a5a39ef51ef5e020730cb8adb8180685e7cf84a9258dac7667"
+  },
+  "unit_ids": [
+    414
+  ],
+  "content_sha256": "3e7b77d6e4d3f934f14e67c5e170f24bbf3d07fd9fd452998c7cb4fc36636db9",
+  "unit_grant_key": "cn350-unit414-rebuild-v1-unit",
+  "monster_grant_key": "",
+  "value_scope": "confirmed catalog base values; level 1; not max-level"
+}

@@ -1,0 +1,20 @@
+# 文本采用 LF，避免跨平台脚本和 Go 格式差异。
+* text=auto eol=lf
+*.go text eol=lf
+*.mod text eol=lf
+*.sum text eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+Makefile text eol=lf
+.env.example text eol=lf
+# 历史迁移按原字节存储，禁止 Git 改写换行后破坏运行库 SHA-256。
+server/internal/database/migrations/*.sql -text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary

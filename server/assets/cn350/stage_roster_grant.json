@@ -1,0 +1,40 @@
+{
+  "grant_version": "min350-04-stage-base-v1",
+  "initial_level": 1,
+  "monster_ids": [
+    39
+  ],
+  "source": {
+    "manifest_sha256": "d060427174c8d162f1f338430c78cea566eb033c42229631f13a17074e097b02",
+    "unit_catalog_version": "202009041551",
+    "unit_catalog_sha256": "516d7debdcceddcfd39544c56ad31797e2928dff611f29d3ec3b71193c5c07e1",
+    "monster_catalog_version": "201906151559",
+    "monster_catalog_sha256": "7f1014466e2312a5a39ef51ef5e020730cb8adb8180685e7cf84a9258dac7667"
+  },
+  "unit_ids": [
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    230,
+    280,
+    290,
+    296,
+    331,
+    336,
+    348,
+    368,
+    375,
+    396
+  ],
+  "content_sha256": "4d3711c416a632fd74228d9cfde63e00f270e4b768aa61a47088c00cdcd04adc",
+  "unit_grant_key": "cn350-min350-04-stage-base-v1-unit",
+  "monster_grant_key": "cn350-min350-04-stage-base-v1-monster",
+  "value_scope": "confirmed catalog base values; level 1; not max-level"
+}

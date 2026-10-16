@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "sourceTree": "client/decoded",
+  "originalApk": "inputs/apk/国服-3.5.0.apk",
+  "originalApkSha256": "d9412c1597d6693721dbd570c6a102f2eff349971d4756d3904935923f9118a2",
+  "apktoolVersion": "3.0.3",
+  "applicationId": "com.happyelements.miraclecn.uc.cn350dbg",
+  "versionCode": 1316,
+  "versionName": "3.5.0",
+  "outputBaseName": "mercstoria-cn350",
+  "knownChanges": [
+    "AndroidManifest.xml package renamed to com.happyelements.miraclecn.uc.cn350dbg for side-by-side installation (original com.happyelements.miraclecn.uc is already installed on the test device with an unrelated signature)"
+  ]
+}
